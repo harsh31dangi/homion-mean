@@ -1,0 +1,70 @@
+components/modules
+
+    app
+        * Shared
+            -> auth                     ✔️
+                -> login                ✔️
+                -> register             ✔️
+            -> header                   ✔️
+            -> footer                   ✔️
+            -> message-modal            ✔️
+            -> confirm-modal            ✔️
+        * User
+            -> user-nav                 ✔️
+            -> home                     ✔️
+            -> profile                  ✔️
+            -> search                   ✔️
+                -> filter               ✔️
+            -> address                  ✔️
+                -> edit-address         ✔️
+            -> favourites               ✔️
+            -> my-orders                ✔️
+                -> order-details        ✔️
+                -> order-review         ✔️
+            -> checkout                 ✔️
+                # address               ✔️
+                # cart                  ✔️
+            -> cart                     ✔️
+            * ChefDetails               ✔️
+                -> preview              ✔️
+                -> chef-products        ✔️
+                -> menu                 ✔️
+                -> rating               ✔️
+                -> dynamic-cart         ✔️
+
+        * Chef
+            -> chef-nav                 ✔️
+                -> toggle-btn
+           H -> home                    ✔️  
+           H -> order-details(modal)    ✔️
+           H -> menu                    ✔️
+           H -> products                ✔️
+                -> edit-product         ✔️
+             -> business                ✔️
+             -> past-orders             ✔️
+                -> invoice              ✔️
+                # order-details         ✔️
+             -> address                 ✔️
+                -> edit-address         ✔️
+             -> profile                 ✔️
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+auth-guard
+interceptor
+user-services
+chef-services
+models
+
+-----------------------------------------------------------------------------------------------------------------------
+
+<ngb-toast *ngIf="true" [class]="'bg-danger text-light position-fixed top-0 end-0 mt-10 me-2 w-auto'" [autohide]="true"
+  [delay]="4000" (hidden)="false">
+  I am toast. Have me with tea.
+</ngb-toast>
+
+<app-confirm-modal [message]="'Are you sure???'" (cancelled)="false" (confirmed)="true"></app-confirm-modal>
+
+-----------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+.card {
+  position: sticky;
+  top: 75px;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.btn-lg:hover {
+  background-color: #258f3e !important;
+}

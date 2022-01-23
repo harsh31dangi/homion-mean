@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand shadow">
+  <div class="ms-4 logo purple" role="button" (click)="toggleNav()">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="container justify-content-center">
+    <strong>
+      <a class="navbar-brand font-weight-bold logo purple">Homion</a>
+    </strong>
+  </div>
+  <div class="me-4">
+    <a routerLink="/user/search" class="logo purple"><span class="h4"><i class="fa fa-search"></i></span></a>
+  </div>
+</nav>
+
+<app-user-nav *ngIf="isOpen && isUser" (onCloseNav)="toggleNav()"></app-user-nav>
+<app-chef-nav *ngIf="isOpen && !isUser"></app-chef-nav>

@@ -1,0 +1,16 @@
+.btn-outline-primary{
+    border-color: var(--purple);
+}
+
+.btn:hover{
+    background-color: var(--purple);
+    color: white !important;
+}
+
+.w-65{
+    width: 65%;
+}
+
+.fs-16{
+    font-size: 15px;
+}
